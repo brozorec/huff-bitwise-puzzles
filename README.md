@@ -1,6 +1,6 @@
-# huff-puzzles by [RareSkills](https://www.rareskills.io)
+# huff-puzzles with bitwise operations
 
-A series of puzzles that go from very easy to more difficult so that you can have a hands-on introduction to the [huff language](https://huff.sh) and learn EVM bytecode while doing it.
+Dealing with a EVM bytecode often requires a good knowledge of bitwise operations (`&`, `|`, `<<`, `>>`, `~`). This series of puzzles is heavily inspired by [RareSkills Huff Puzzles](https://github.com/rareskills/huff-puzzles). Besides the hands-on introduction to the [huff language](https://huff.sh), this repo refreshes your mind on the magic of the bitwise operations. 
 
 ## Pre-requisites
 
@@ -24,64 +24,28 @@ To install dependencies, run:
 
 ## How to play
 
-Go to [Return1.huff](https://github.com/rareskills/huff-puzzles/blob/main/src/Return1.huff) in the src folder and edit it as follows
+Go to [GetBitAt.huff](https://github.com/brozorec/huff-bitwise-puzzles/blob/main/src/GetBitAt.huff) in the src folder and edit it as follows
 
 ```c
 #define macro MAIN() = takes(0) returns(0) {
-    // store 1 in memory at offset 0
-    0x01            // [1]
-    0x00            // [0, 1]
-    mstore          // []
-
-    // return 1
-    // return 32 bytes of memory starting at offset 0
-    0x20            // [32]
-    0x00            // [0, 32]
-    return          // []
+    // your Huff code goes here
 }
 ```
 
 Then run the test with
 
-    forge test -vvv --mc Return1Test
+    forge test -vvv --mc GetBitAt
 
 You should see something like this
 
-    Running 1 test for test/Return1.t.sol:Return1Test
-    [PASS] testReturn1() (gas: 5358)
+    Running 1 test for test/GetBitAt.t.sol:GetBitAt
+    [PASS] testGetBitAt() (gas: 5358)
     Test result: ok. 1 passed; 0 failed; finished in 4.56s
-
-## Suggested order for other exercises
-
-- [CallValue](https://github.com/rareskills/huff-puzzles/blob/main/src/CallValue.huff)
-- [CalldataLength](https://github.com/rareskills/huff-puzzles/blob/main/src/CalldataLength.huff)
-- [MyEtherBalance](https://github.com/rareskills/huff-puzzles/blob/main/src/MyEtherBalance.huff)
-- [Add1](https://github.com/rareskills/huff-puzzles/blob/main/src/Add1.huff)
-- [Multiply](https://github.com/rareskills/huff-puzzles/blob/main/src/Multiply.huff)
-- [NonPayable](https://github.com/rareskills/huff-puzzles/blob/main/src/NonPayable.huff)
-- [FooBar](https://github.com/rareskills/huff-puzzles/blob/main/src/FooBar.huff)
-- [SimpleStore](https://github.com/rareskills/huff-puzzles/blob/main/src/SimpleStore.huff)
-- [RevertCustom](https://github.com/rareskills/huff-puzzles/blob/main/src/RevertCustom.huff)
-- [RevertString](https://github.com/rareskills/huff-puzzles/blob/main/src/RevertString.huff)
-- [SumArray](https://github.com/rareskills/huff-puzzles/blob/main/src/SumArray.huff)
-- [Keccak](https://github.com/rareskills/huff-puzzles/blob/main/src/Keccak.huff)
-- [MaxOfArray](https://github.com/rareskills/huff-puzzles/blob/main/src/MaxOfArray.huff)
-- [Create](https://github.com/rareskills/huff-puzzles/blob/main/src/Create.huff)
-- [Emitter](https://github.com/rareskills/huff-puzzles/blob/main/src/Emitter.huff)
-- [Donations](https://github.com/rareskills/huff-puzzles/blob/main/src/Donations.huff)
-- [SendEther](https://github.com/rareskills/huff-puzzles/blob/main/src/SendEther.huff)
-- [BasicBank](https://github.com/rareskills/huff-puzzles/blob/main/src/BasicBank.huff)
-- [Distribute](https://github.com/rareskills/huff-puzzles/blob/main/src/Distributor.huff)
-- [SimulateArray](https://github.com/rareskills/huff-puzzles/blob/main/src/SimulateArray.huff)
 
 ## More resources
 
 - [Huff Documentation 🐴](https://docs.huff.sh/)
+- [Bitwise Operations Tutorial](https://medium.com/@jeremythen16/master-bitwise-operations-once-and-for-all-f5283e3c9a11) (the assignments follow this tutorial)
 - [Evm codes](https://evm.codes)
-- [Huffmate](https://github.com/huff-language/huffmate)
 - [Huff Console.log](https://github.com/AmadiMichael/Huff-Console)
 
-## Contributors
-
-- [Michael Amadi](https://github.com/AmadiMichael)
-- [Jesse Raymond](https://github.com/jesserc)
