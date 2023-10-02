@@ -18,7 +18,7 @@ contract GetByteAtOffsetTest is Test, NonMatchingSelectorHelper {
     // Test GetByteAtOffset function
     function testGetByteAtOffset() public {
         // Test Case 1
-        assertEq(getByteAtOffset.getByteAtOffset(33469, 8), 189, "Incorrect result for Test Case 1");
+        assertEq(getByteAtOffset.getByteAtOffset(33469, 8), 130, "Incorrect result for Test Case 1");
 
         // Test Case 2
         assertEq(getByteAtOffset.getByteAtOffset(65535, 0), 255, "Incorrect result for Test Case 2");
@@ -27,10 +27,10 @@ contract GetByteAtOffsetTest is Test, NonMatchingSelectorHelper {
         assertEq(getByteAtOffset.getByteAtOffset(0, 3), 0, "Incorrect result for Test Case 3");
 
         // Test Case 4
-        assertEq(getByteAtOffset.getByteAtOffset(123456789, 16), 151, "Incorrect result for Test Case 4");
+        assertEq(getByteAtOffset.getByteAtOffset(123456789, 16), 91, "Incorrect result for Test Case 4");
 
         // Test Case 5
-        assertEq(getByteAtOffset.getByteAtOffset(255, 4), 0, "Incorrect result for Test Case 5");
+        assertEq(getByteAtOffset.getByteAtOffset(255, 4), 15, "Incorrect result for Test Case 5");
     }
 
     function testNonMatchingSelector(bytes32 callData) public {

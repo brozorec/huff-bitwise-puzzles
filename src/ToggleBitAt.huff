@@ -1,0 +1,13 @@
+/**
+ *  TOGGLE BIT AT INDEX
+ *  
+ *  The task is to create a HUFF contract with a function toggleBitAt(uint256, uint8) that 
+ *  toggles the bit at the specified index in the given number.
+ */
+
+#define function toggleBitAt(uint256, uint8) pure returns(uint256)
+
+#define macro MAIN() = takes(0) returns(0) {
+
+}
+

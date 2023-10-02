@@ -29,7 +29,7 @@ contract GetFirstByteTest is Test, NonMatchingSelectorHelper {
         assertEq(getFirstByte.getFirstByte(65536), 0, "Incorrect result for Test Case 4");
 
         // Test Case 5
-        assertEq(getFirstByte.getFirstByte(987654321), 137, "Incorrect result for Test Case 5");
+        assertEq(getFirstByte.getFirstByte(987654321), 177, "Incorrect result for Test Case 5");
     }
 
     function testNonMatchingSelector(bytes32 callData) public {
