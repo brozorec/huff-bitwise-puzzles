@@ -1,0 +1,15 @@
+/**
+ *  IS EVEN HUFF EXERCISE
+ *  
+ *  The task is to create a HUFF contract with a function isEven(uint256) that
+ *  checks if a given number is even using the & operator.
+ *  
+ *  NOTICE: The contract should revert when an unrecognized function is called
+ */
+
+#define function isEven(uint256) pure returns(bool)
+
+#define macro MAIN() = takes(0) returns(0) {
+
+}
+

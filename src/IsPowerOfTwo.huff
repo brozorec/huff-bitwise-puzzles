@@ -1,0 +1,14 @@
+/**
+ *  IS POWER OF TWO HUFF
+ *  
+ *  The task is to create a HUFF contract with a function isPowerOfTwo(uint256)
+ *  that checks if a number is a power of 2 by using bitwise operators.
+ *  
+ *  NOTICE: The contract should revert when an unrecognized function is called
+ */
+
+#define function isPowerOfTwo(uint256 number) pure returns (bool)
+
+#define macro MAIN() = takes(0) returns(0) {
+
+}
