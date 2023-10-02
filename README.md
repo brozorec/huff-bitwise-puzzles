@@ -1,6 +1,6 @@
-# huff-puzzles with bitwise operations
+# Huff puzzles with bitwise operations
 
-Dealing with a EVM bytecode often requires a good knowledge of bitwise operations (`&`, `|`, `<<`, `>>`, `~`). This series of puzzles is heavily inspired by [RareSkills Huff Puzzles](https://github.com/rareskills/huff-puzzles). Besides the hands-on introduction to the [huff language](https://huff.sh), this repo refreshes your mind on the magic of the bitwise operations. 
+Managing EVM (Ethereum Virtual Machine) bytecode frequently demands a solid grasp of bitwise operations, including `&`, `|`, `<<`, `>>`, `^` and `~`. This collection of challenges draws significant inspiration from the [RareSkills Huff Puzzles](https://github.com/rareskills/huff-puzzles). In addition to providing a practical introduction to the [Huff language](https://huff.sh), the tasks within this repository serve to enhance comprehension of bitwise operations in the context of Ethereum development.
 
 ## Pre-requisites
 
