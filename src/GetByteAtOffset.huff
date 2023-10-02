@@ -1,0 +1,15 @@
+/** 
+ *  GET BYTE AT OFFSET ASSIGNMENT
+ *  
+ *  The task is to create a contract with a function `getByteAtOffset(uint256, uint8)`
+ *  that returns the decimal value of the byte at the specified offset (in bits) of
+ *  the given number.
+ *  
+ *  NOTICE: The contract should revert when an unrecognized function is called
+ */
+
+#define function getByteAtOffset(uint256, uint8) pure returns(uint8)
+
+#define macro MAIN() = takes(0) returns(0) {
+
+} 

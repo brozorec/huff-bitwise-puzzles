@@ -1,0 +1,15 @@
+/** 
+ *  GET BIT AT ASSIGNMENT
+ *  
+ *  The task is to create a contract with a function `getBitAt(uint256, uint8)`
+ *  that returns the value of the bit at the specified index in the binary
+ *  representation of the given number.
+ *  
+ *  NOTICE: The contract should revert when an unrecognized function is called
+ */
+
+#define function getBitAt(uint256, uint8) pure returns(uint256)
+
+#define macro MAIN() = takes(0) returns(0) {
+
+} 
